@@ -39,10 +39,10 @@ function createItem (pokemon) {
         pokemon['height'] = data.height;
         pokemon['types'] = data.types;
         pokemon['sprites'] = data.sprites;*/
-        item.textContent = data.name;
+        item.textContent = data.name + data.id;
         list.appendChild(item);// li dans ul
         item.appendChild(pics);
-        pics.src = data.sprites.front_default;
+        pics.src = data.sprites.front_shiny;
 
     });
     

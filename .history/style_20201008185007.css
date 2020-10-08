@@ -3,7 +3,7 @@
 #list li {
     cursor: pointer;
 }
-#list li :hover {
+#list li:hover {
 }
 
 #description {
