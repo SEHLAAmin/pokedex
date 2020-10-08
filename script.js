@@ -18,19 +18,32 @@ function transformToJson (response) {
  * Clear the list of all its items
  */
 function emptyList () {
-    // ...
 }
 
 /**
  * Create an item, fetch its data and setup event listener
  */
 function createItem (pokemon) {
-    // Create a li tag
+    
     const item = document.createElement("li");
-    // ...
+    document.body.appendChild(item);
+  
+    
+
     fetch(pokemon.url).then(transformToJson).then((data) => {
-        // ...
+        pokemon = {};
+          pokemon['name'] = data.name;
+        pokemon['id'] = data.id;
+        pokemon['weight'] = data.weight;
+        pokemon['height'] = data.height;
+        pokemon['types'] = data.types;
+        pokemon['sprites'] = data.sprites;
+        item.textContent = data.name;
+        
+
+
     });
+    
 }
 
 /**
@@ -47,6 +60,7 @@ function fillList (json) {
 function showDescription (data) {
     description.classList.add("show");
 
+
     const fields = description.querySelectorAll("dd");
     fields.forEach((dd) => {
         // ...
@@ -62,3 +76,4 @@ function hideDescription () {
 
 // Fetch the API end-point and fill the list
 fetch(api).then(transformToJson).then(fillList);
+
