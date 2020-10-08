@@ -26,21 +26,23 @@ function emptyList () {
 function createItem (pokemon) {
     
     const item = document.createElement("li");
-    document.body.appendChild(item);
-  
+     
+  const pics = document.createElement("img");
     
 
     fetch(pokemon.url).then(transformToJson).then((data) => {
+        
         pokemon = {};
-          pokemon['name'] = data.name;
+        /*pokemon['name'] = data.name;
         pokemon['id'] = data.id;
         pokemon['weight'] = data.weight;
         pokemon['height'] = data.height;
         pokemon['types'] = data.types;
-        pokemon['sprites'] = data.sprites;
-        item.textContent = data.name;
-        
-
+        pokemon['sprites'] = data.sprites;*/
+        item.textContent = data.name + data.id;
+        list.appendChild(item);// li dans ul
+        item.appendChild(pics);
+        pics.src = data.sprites.front_shiny;
 
     });
     
