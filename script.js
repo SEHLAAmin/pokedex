@@ -26,23 +26,31 @@ function emptyList () {
 function createItem (pokemon) {
     
     const item = document.createElement("li");
-     
-  const pics = document.createElement("img");
+     const pics = document.createElement("img");
     
 
     fetch(pokemon.url).then(transformToJson).then((data) => {
         
-        pokemon = {};
         /*pokemon['name'] = data.name;
         pokemon['id'] = data.id;
         pokemon['weight'] = data.weight;
         pokemon['height'] = data.height;
-        pokemon['types'] = data.types;
+        pokemon['types'] = data.type.type;
         pokemon['sprites'] = data.sprites;*/
-        item.textContent = data.name + data.id;
+
+
+
+        
+        item.textContent = data.name +"  "+data.id; 
         list.appendChild(item);// li dans ul
         item.appendChild(pics);
-        pics.src = data.sprites.front_shiny;
+        pics.src = data.sprites.front_default;
+        item.addEventListener("mouseenter", (e) => {
+            showDescription(data);
+            item.appendChild(description);
+
+        });
+        
 
     });
     
@@ -54,18 +62,19 @@ function createItem (pokemon) {
 function fillList (json) {
     emptyList();
     json.results.forEach(createItem);
+
 }
 
 /**
  * Fill and display the description
  */
 function showDescription (data) {
+
     description.classList.add("show");
 
-
     const fields = description.querySelectorAll("dd");
-    fields.forEach((dd) => {
-        // ...
+    fields.forEach((dd) => { 
+        dd.textContent = data[dd.classList[0]]; // convertie la data brut en un array pour chaque dd.
     });
 }
 
