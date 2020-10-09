@@ -1,0 +1,60 @@
+body {
+    background: rgb(9, 76, 131);
+}
+
+h1 {
+    height: 200px;
+    color: yellow;
+    text-shadow: rgb(9, 76, 131) 4px 2px,rgb(9, 76, 131) 4px 2px, rgb(9, 76, 131) 4px 2px, rgb(9, 76, 131) 4px 2px;
+    background-color: red;
+    text-align: center;
+    font-size: 150px;
+    font-weight: 900;
+    font-family: fantasy cursive;
+    font-style: normal;
+    width: 100%;
+    border: 3pxrgb(9, 76, 131) solid;
+    border-radius: 10px;
+}
+
+div {
+    margin: auto;
+}
+#list {
+    display: grid;
+    border: 10px;
+    margin: 20px solid;
+    padding: 10px;
+    background-color: white;
+    background:red;
+    display: grid;
+    width : 100%;
+    grid-gap: 1fr 1fr;
+    text-align : left;
+    gap: 2px;
+    border: 3px rgb(9, 76, 131) solid;
+    border-radius: 10px;
+    row-gap: 3px;
+     
+    
+}
+#list li {
+    cursor: pointer;
+    grid-template-columns : 200%;
+    grid-template-rows: max-content;
+}
+#list li :hover {
+        display: block;
+      
+}
+
+#description {
+    background-color: red;
+
+}
+
+
+
+#close {
+    display: none
+}

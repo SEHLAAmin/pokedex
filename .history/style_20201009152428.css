@@ -7,17 +7,16 @@ h1 {
     color: yellow;
     text-shadow: rgb(85, 130, 167) 4px 2px, rgb(85, 130, 167) 4px 2px, rgb(85, 130, 167) 4px 2px, rgb(85, 130, 167) 4px 2px;
     background-color: rgb(240, 48, 58);
-    padding-left: 40px;;
+    
     text-align: center;
     font-size: 150px;
     font-weight: 900;
     font-family: fantasy cursive;
     font-style: normal;
-    width: 96%;
+    width: 100%;
     border: 15px white solid;
     border-radius: 10px;
-    background-image: url(https://i.gifer.com/Rd6G.gif);
-
+    background-image: url(https://i.gifer.com/7A6J.https://i.gifer.com/DEUs.gif);
    
 }
 
@@ -33,7 +32,7 @@ div {
     padding-left: 50px;
     background-color: white;
     background:rgb(240, 48, 58);
-    width : 96%;
+    width : 90%;
     grid-gap: 1fr 1fr;
     text-align : left;
     gap: 2px;
@@ -41,6 +40,10 @@ div {
     border-radius: 10px;
     row-gap: 3px;
     border-width:5px 5px 5px 5px;
+    : center;
+
+     
+
     
 }
 #list li {

@@ -6,60 +6,50 @@ h1 {
     height: 200px;
     color: yellow;
     text-shadow: rgb(85, 130, 167) 4px 2px, rgb(85, 130, 167) 4px 2px, rgb(85, 130, 167) 4px 2px, rgb(85, 130, 167) 4px 2px;
-    background-color: rgb(240, 48, 58);
-    padding-left: 40px;;
+    background-color: red;
     text-align: center;
     font-size: 150px;
     font-weight: 900;
     font-family: fantasy cursive;
     font-style: normal;
-    width: 96%;
-    border: 15px white solid;
+    width: 100%;
+    border: 3px rgb(85, 130, 167) solid;
     border-radius: 10px;
-    background-image: url(https://i.gifer.com/Rd6G.gif);
-
-   
 }
 
 div {
     margin: auto;
 }
 #list {
-    
     display: grid;
     border: 10px;
     margin: 20px solid;
     padding: 10px;
-    padding-left: 50px;
     background-color: white;
-    background:rgb(240, 48, 58);
-    width : 96%;
+    background:rgb(202, 92, 98);
+    display: grid;
+    width : 100%;
     grid-gap: 1fr 1fr;
     text-align : left;
     gap: 2px;
-    border: 15px white solid;
+    border: 3px rgb(85, 130, 167) solid;
     border-radius: 10px;
     row-gap: 3px;
-    border-width:5px 5px 5px 5px;
+     
     
 }
 #list li {
     cursor: pointer;
     grid-template-columns : 200%;
     grid-template-rows: max-content;
-    border: 5px white solid;
-    border-radius: 5px;
-    row-gap: 3px;
-    
 }
-
 #list li :hover {
         display: block;
       
 }
 
 #description {
-    background-color: rgb(85, 130, 167);
+    background-color: rgb(245, 245, 94);
 
 }
 
@@ -67,7 +57,4 @@ button {
     display: none;
 }
 
-ul {
-     list-style-image : url(https://i.gifer.com/4xjS.gif);
-   } 
 
