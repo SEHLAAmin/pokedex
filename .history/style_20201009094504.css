@@ -1,22 +1,17 @@
 h1 {
     color: yellow;
-    text-shadow: rgb(9, 76, 131) 4px 2px,rgb(9, 76, 131) 4px 2px, rgb(9, 76, 131) 4px 2px, rgb(9, 76, 131) 4px 2px;
+    text-shadow: white 1px 1px, white -1px 1px, white -1px -1px, white 1px -1px;
     background-color: red;
-    text-align: center;
-    font-weight: 900;
-    font-family: fantasy cursive;
-    font-style: normal;
+
 
 }
 
 #list {
     background: red;
     display: grid;
-    width : 800px;
+    width : 500px;
     grid-template-columns : 33% 33% 34%;
     grid-gap: 1fr 1fr;
-    text-align : center;
-
     
     
 }

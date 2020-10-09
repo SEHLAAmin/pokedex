@@ -52,7 +52,7 @@ function createItem (pokemon) {
  * fill the item list with values
  */
 function fillList (json) {
-    emptyList();
+    
     json.results.forEach(createItem);
 }
 
@@ -61,11 +61,11 @@ function fillList (json) {
  */
 function showDescription (data) {
     description.classList.add("show");
-    
+
+
     const fields = description.querySelectorAll("dd");
     fields.forEach((dd) => {
-        
-        
+        // ...
     });
 }
 

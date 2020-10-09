@@ -1,0 +1,27 @@
+h1 {
+    color: yellow;
+    
+
+}
+
+#list {
+    background: red;
+    display: grid;
+    width : 500px;
+    grid-template-columns : 33% 33% 34%;
+    grid-gap: 1fr 1fr;
+    
+    
+}
+#list li {
+    cursor: pointer;
+}
+#list li :hover {
+}
+
+#description {
+    background-color: red;
+
+}
+
+

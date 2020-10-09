@@ -1,0 +1,16 @@
+#list {
+}
+#list li {
+    cursor: pointer;
+}
+#list li :hover {
+}
+
+#description {
+    display: grid;
+    width : 100px;
+    grid-template-columns : 30% 30% 40%
+    grid-gap: 20px 10px;;
+}
+
+

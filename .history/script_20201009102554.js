@@ -61,10 +61,11 @@ function fillList (json) {
  */
 function showDescription (data) {
     description.classList.add("show");
-    
+
+
     const fields = description.querySelectorAll("dd");
     fields.forEach((dd) => {
-        
+        item.textContent = data.name + " " + data.id + " " + data.types; 
         
     });
 }

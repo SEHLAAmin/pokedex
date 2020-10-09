@@ -1,0 +1,23 @@
+background-color: red;
+
+#list {
+    
+    display: grid;
+    width : 300px;
+    grid-template-columns : 1fr 1fr 1fr;
+    grid-gap: 20px 10px;
+    
+    
+}
+#list li {
+    cursor: pointer;
+}
+#list li :hover {
+}
+
+#description {
+    background-color: red;
+
+}
+
+

@@ -52,7 +52,8 @@ function createItem (pokemon) {
  * fill the item list with values
  */
 function fillList (json) {
-    emptyList();
+    data.name, data.id, data.types, data.weight, data.height
+        ;
     json.results.forEach(createItem);
 }
 
@@ -64,8 +65,7 @@ function showDescription (data) {
     
     const fields = description.querySelectorAll("dd");
     fields.forEach((dd) => {
-        
-        
+
     });
 }
 

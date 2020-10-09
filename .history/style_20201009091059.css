@@ -1,0 +1,23 @@
+#list {
+}
+#list li {
+    cursor: pointer;
+}
+#list li :hover {
+}
+
+#description {
+    display: none;
+}
+
+#grid-container {
+    display: grid;
+    width : 100px;
+    grid-template-columns : 30% 30% 40%
+}
+
+.grid {
+    display: grid;
+    width: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
