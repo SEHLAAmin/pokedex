@@ -27,7 +27,7 @@ function createItem (pokemon) {
     
     const item = document.createElement("li");
      
-  const pics = document.createElement("img");
+    const pics = document.createElement("img");
     
 
     fetch(pokemon.url).then(transformToJson).then((data) => {
@@ -39,10 +39,14 @@ function createItem (pokemon) {
         pokemon['height'] = data.height;
         pokemon['types'] = data.types;
         pokemon['sprites'] = data.sprites;*/
-        item.textContent = data.name + " " + data.id;
+        item.textContent = data.name;
         list.appendChild(item); //li dans ul
         item.appendChild(pics); //pics dans li
         pics.src = data.sprites.front_default;
+        item.addEventListener("mouseenter", (e) => {
+            showDescription(data);            
+            item.appendChild(description);   
+        })
 
     });
     
@@ -54,6 +58,7 @@ function createItem (pokemon) {
 function fillList (json) {
     emptyList();
     json.results.forEach(createItem);
+    
 }
 
 /**
@@ -61,19 +66,20 @@ function fillList (json) {
  */
 function showDescription (data) {
     description.classList.add("show");
-    
+
     const fields = description.querySelectorAll("dd");
     fields.forEach((dd) => {
-        
-        
+     dd.textContent = data[dd.classList[0]];
     });
 }
+
 
 /**
  * Hide the description
  */
 function hideDescription () {
     description.classList.remove("show");
+
 }
 
 // Fetch the API end-point and fill the list
