@@ -28,7 +28,6 @@ function createItem (pokemon) {
     const item = document.createElement("li");
      
     const pics = document.createElement("img");
-
     
 
     fetch(pokemon.url).then(transformToJson).then((data) => {
@@ -43,8 +42,9 @@ function createItem (pokemon) {
         item.textContent = data.name;
         list.appendChild(item); //li dans ul
         item.appendChild(pics); //pics dans li
+        types.appendChild(list);
         pics.src = data.sprites.front_default;
-      
+
 
         item.addEventListener("mouseover", (e) => {
             showDescription(data);            
@@ -74,27 +74,15 @@ function fillList (json) {
  */
 function showDescription (data) {
     description.classList.add("show");
-    let types = description.querySelectorAll(".types");
+
     const fields = description.querySelectorAll("dd");
-
     fields.forEach((dd) => {
-    dd.textContent = data[dd.classList[0]];
+     dd.textContent = data[dd.classList[0]];
     });
-
-    
-    types.forEach((types) => {
-        if (data.types.length < 2) {
-        types.textContent = data.types[0].type.name; 
-    } else {
-        types.textContent = data.types[0].type.name + " " + data.types[1].type.name; 
-    }
-    
-}); 
-
 }
 
 
-/*
+/**
  * Hide the description
  */
 function hideDescription () {

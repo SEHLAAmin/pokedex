@@ -1,61 +1,63 @@
 body {
     background: rgb(85, 130, 167);
+    cursor: url(https://i.gifer.com/4xjS.gif);
 }
+
 
 h1 {
     height: 200px;
     color: yellow;
     text-shadow: rgb(85, 130, 167) 4px 2px, rgb(85, 130, 167) 4px 2px, rgb(85, 130, 167) 4px 2px, rgb(85, 130, 167) 4px 2px;
     background-color: rgb(240, 48, 58);
-
+    padding-left: 40px;;
     text-align: center;
     font-size: 150px;
     font-weight: 900;
     font-family: fantasy cursive;
     font-style: normal;
-    width: 100%;
+    width: 96%;
     border: 15px white solid;
     border-radius: 10px;
     background-image: url(https://i.gifer.com/Rd6G.gif);
-
+    
+   
 }
 
 div {
     margin: auto;
 }
 #list {
- display: flex;
+    
+    display: grid;
     border: 10px;
     margin: 20px solid;
     padding: 10px;
-    background:rgb(247, 240, 149);
+    padding-left: 50px;
+    background-color: white;
+    background:rgb(240, 48, 58);
+    width : 96%;
+    grid-gap: 1fr 1fr ;
+    text-align : left;
+    gap: 2px;
     border: 15px white solid;
     border-radius: 10px;
-    justify-content: space-around;
-    height: 100%;
-    flex-wrap: wrap;
-
-
-
-
+    row-gap: 3px;
+    border-width:5px 5px 5px 5px;
+    
 }
 #list li {
-
     cursor: pointer;
+    grid-template-columns : 200%;
+    grid-template-rows: max-content;
     border: 5px white solid;
     border-radius: 5px;
-    justify-content: space-between;
-    width: 20%;
-    margin-bottom: 20px;
-
-
+    row-gap: 3px;
+    
 }
 
 #list li :hover {
         display: block;
-        transition: 0.2s;
-
-
+        
 }
 
 #description {
@@ -69,8 +71,5 @@ button {
 
 ul {
      list-style-image : url(https://i.gifer.com/4xjS.gif);
-   }
+   } 
 
-   img {
-       margin-left: 15px;
-   }

@@ -74,7 +74,7 @@ function fillList (json) {
  */
 function showDescription (data) {
     description.classList.add("show");
-    let types = description.querySelectorAll(".types");
+    let types = document.querySelectorAll(".types");
     const fields = description.querySelectorAll("dd");
 
     fields.forEach((dd) => {
@@ -86,7 +86,7 @@ function showDescription (data) {
         if (data.types.length < 2) {
         types.textContent = data.types[0].type.name; 
     } else {
-        types.textContent = data.types[0].type.name + " " + data.types[1].type.name; 
+        types.textContent = data.types[0].type.name + " " + data.types[1].type.name ; 
     }
     
 }); 

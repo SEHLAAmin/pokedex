@@ -1,5 +1,5 @@
 body {
-    background: rgb(85, 130, 167);
+    background: rgb(250, 252, 160);
 }
 
 h1 {
@@ -16,7 +16,7 @@ h1 {
     width: 100%;
     border: 15px white solid;
     border-radius: 10px;
-    background-image: url(https://i.gifer.com/Rd6G.gif);
+
 
 }
 
@@ -28,7 +28,7 @@ div {
     border: 10px;
     margin: 20px solid;
     padding: 10px;
-    background:rgb(247, 240, 149);
+    background:rgb(240, 48, 58);
     border: 15px white solid;
     border-radius: 10px;
     justify-content: space-around;
