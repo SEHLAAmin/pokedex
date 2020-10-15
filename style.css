@@ -1,55 +1,76 @@
+body {
+    background: rgb(85, 130, 167);
+}
+
 h1 {
-    height: 300px;
+    height: 200px;
     color: yellow;
-    text-shadow: rgb(9, 76, 131) 4px 2px,rgb(9, 76, 131) 4px 2px, rgb(9, 76, 131) 4px 2px, rgb(9, 76, 131) 4px 2px;
-    background-image: url('./pokeball.png');
+    text-shadow: rgb(85, 130, 167) 4px 2px, rgb(85, 130, 167) 4px 2px, rgb(85, 130, 167) 4px 2px, rgb(85, 130, 167) 4px 2px;
+    background-color: rgb(240, 48, 58);
+
     text-align: center;
     font-size: 150px;
     font-weight: 900;
     font-family: fantasy cursive;
     font-style: normal;
-    border-radius: 50%;
-    padding-top: 50px;
-    margin-top: 5px;
+    width: 100%;
+    border: 15px white solid;
+    border-radius: 10px;
+    background-image: url(https://i.gifer.com/Rd6G.gif);
 
 }
 
+div {
+    margin: auto;
+}
 #list {
+ display: flex;
+    border: 10px;
+    margin: 20px solid;
+    padding: 10px;
+    background:rgb(247, 240, 149);
+    border: 15px white solid;
+    border-radius: 10px;
+    justify-content: space-around;
+    height: 100%;
+    flex-wrap: wrap;
 
-    border: 2px solid black;
-    margin: 20px;
-    margin-right: 50% ;
-    background-color: white;
-    background:red;
-    width : 100%;
-    padding-left: 50%;
+
 
 
 }
 #list li {
+
     cursor: pointer;
-    border-radius: 20% 2px black;
-    grid-template-columns : 200%;
-    grid-template-rows: max-content;
-    grid-gap: 1fr 1fr;
-    transition-property: all;
-    transition: 2s;
+    border: 5px white solid;
+    border-radius: 5px;
+    justify-content: space-between;
+    width: 20%;
+    margin-bottom: 20px;
+
+
 }
+
 #list li :hover {
-        background-image: url(./2gfwG.png);
-      }
+        display: block;
+        transition: 0.2s;
+
+
 }
 
 #description {
-    background-color: red;
+    background-color: rgb(85, 130, 167);
 
 }
 
-.container {
-   display: inline-block;
-
-}
-.body {
-    background: rgb(9, 76, 131)
+button {
+    display: none;
 }
 
+ul {
+     list-style-image : url(https://i.gifer.com/4xjS.gif);
+   }
+
+   img {
+       margin-left: 15px;
+   }
