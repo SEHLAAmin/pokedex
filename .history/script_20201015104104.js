@@ -53,8 +53,6 @@ function createItem (pokemon) {
         item.addEventListener("mouseleave", (e) => {
             hideDescription("show");
             item.removeChild(description);
-        });
-               
     });
     
 }

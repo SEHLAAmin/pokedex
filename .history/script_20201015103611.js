@@ -45,17 +45,20 @@ function createItem (pokemon) {
         pics.src = data.sprites.front_default;
 
 
-        item.addEventListener("mouseover", (e) => {
+        item.addEventListener("mouseover", over1);
+        function over1() {
             showDescription(data);            
             item.appendChild(description);   
-        })
-    
-        item.addEventListener("mouseleave", (e) => {
+        }
+        
+        item.addEventListener("mouseleave", leave1);
+        function leave1() {
             hideDescription("show");
-            item.removeChild(description);
-        });
-               
-    });
+            item.appendChild(description);    
+        }
+
+
+    }
     
 }
 
